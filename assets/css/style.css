@@ -1,0 +1,1272 @@
+﻿
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDIT US AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/*=====================================
+   GENERAL STYLE SECTION
+    ===================================*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    
+}
+
+.pad-low {
+    padding-top: 40px;
+}
+.recent-events-wrap img {
+    width: 100% !important; /* Ensures responsiveness across all devices */
+    height: auto !important; /* Maintains aspect ratio by default */
+    aspect-ratio: 1 / 1 !important; /* Forces the image to display as a square */
+    object-fit: cover !important; /* Ensures the image content fills the square without distortion */
+    border-radius: 10px !important; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Optional: Subtle shadow for a polished look */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .recent-events-wrap img {
+        height: auto !important; /* Adjust for smaller devices */
+        aspect-ratio: 1 / 1 !important; /* Ensures square shape on mobile */
+    }
+}
+
+
+text-center {
+    text-align: center;
+}
+
+h1, h2, h3.h4 {
+    font-family: 'Nova Flat';
+    color: #35caef !important;
+}
+
+h3 {
+    color: #04bacf !important;
+}
+
+h2:after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #04bacf;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.pad-set {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+/*=====================================
+   COLOR CODES
+    ===================================*/
+.main-color {
+    color: #55068A;
+}
+
+.main-color-bk {
+    background-color: #55068A;
+}
+
+/* ====================================== 
+    NAV BAR STYLE SECTION 
+ =================================== */
+
+/* General Styles for Navbar */
+.navbar-default {
+    background-color: #fff; /* Change to desired background color */
+    border: none;
+    padding: 15px 0; /* Adjust padding to give more space */
+    display: flex;
+    justify-content: space-between; /* Align logo and navigation links */
+    align-items: center;
+    position: sticky; /* Make navbar stick at the top */
+    top: 0; /* Ensure it sticks to the top */
+    z-index: 1000; /* Ensure it stays above other elements when scrolling */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow to make it stand out */
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+    margin-right: 20px; /* Space between the logo and navigation links */
+}
+
+/* Logo Styling */
+.navbar-brand-logo {
+    max-height: 100px; /* Ensure logo fits well within the navbar */
+    max-width: 160px;
+    margin-bottom: -48px; /* Remove any bottom margin */
+    margin-left: -90px;
+}
+
+/* Navbar Links Styling */
+.navbar-default .navbar-nav > li > a {
+    color: rgb(10, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth transition for color and underline */
+    margin-bottom: 5px; /* Ensure even bottom margin for all links */
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #4fe8ff;
+}
+
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
+    color: #4f95ff !important;
+    background-color: transparent !important;
+    border-bottom: 3px solid #4f95ff !important; /* Underline for active tab */
+}
+
+/* Adjusted Contact Info Bar Styles */
+.contact-bar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky; /* Make the contact info bar stick to the top */
+    top: 0;
+    z-index: 999; /* Make sure the contact bar stays below the navbar */
+    background: linear-gradient(to right, #04bacf, #b085cf);
+}
+
+/* Contact Info Centering */
+.contact-info {
+    display: flex;
+    justify-content: center; /* Center the contact info horizontally */
+    width: 100%;
+    align-items: center; /* Align content vertically */
+    margin-bottom: 20px; /* Provide consistent bottom spacing */
+}
+
+.contact-info a {
+    color: #000;
+    font-size: 14px;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    margin-bottom: 5px; /* Even margin at the bottom for each item */
+}
+
+.contact-info i {
+    margin-bottom: 3px; /* Space between icon and text */
+}
+
+/* Make .container sticky and ensure no overlap with content */
+.container {
+    position: sticky;
+    top: 60px; /* Adjust the top value to provide space below navbar */
+    z-index: 998; /* Keep it below navbar and contact bar */
+    margin-top: 20px; /* Provide additional space from other page items */
+}
+
+/* Responsive Design Adjustments */
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav > li {
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center; /* Vertically center the items */
+    }
+
+    .navbar-brand-logo {
+        max-height: 70px;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-top: -25px;
+    }
+
+    .navbar-toggle {
+        order: 2 !important; /* Ensure the menu button comes after the logo */
+    }
+
+    .logo-container {
+        order: 1 !important;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px !important; /* Move logo to the left margin */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info a {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-brand {
+        justify-content: center;
+    }
+}
+
+/*=====================================
+ MAIN  HEADER SECTION  STYLE 
+    ===================================*/
+    #main-head {
+        color: #fff !important;
+        padding: 20px 10px 35px 10px !important;
+        line-height: 40px !important;
+        font-size: 14px !important;
+        text-align: center !important;
+        background: none !important;
+        width: 120% !important; /* Increase width */
+        border: none !important; /* Remove border */
+    }
+
+    #main-head input:focus {
+        border: 1px solid #FF4F4F;
+    }
+
+    #main-head .form-control {
+        height: 40px;
+        color: #04bacf;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #04bacf;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+    #main-head span {
+        color: #9a12dd;
+        font-size: 30px;
+    }
+
+    #main-head h5 {
+        padding: 10px 2px 10px 2px;
+        color:#c365f1 !important;
+    }
+
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .project-card {
+            width: calc(50% - 40px); /* Adjust for margin and padding */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .project-card {
+            width: calc(100% - 40px); /* Full width for smaller screens */
+        }
+    }
+    .donation-banner {
+        position: relative;
+        background: url('../img/slider/image\ gallery\ 2.jpg') center/cover no-repeat;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .donation-banner .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .donation-banner h1 {
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        text-align: center;
+      }
+      
+      @media (max-width: 768px) {
+        .donation-banner {
+          height: 200px;
+        }
+      
+        .donation-banner h1 {
+          font-size: 1.5rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .donation-banner {
+          height: 150px;
+        }
+      
+        .donation-banner h1 {
+          font-size: 1.2rem;
+        }
+      }
+      
+    
+/*===================================== 
+    SLIDER SECTION 
+ ===================================*/
+ #carousel-slider {
+    border: none !important; /* Remove border */
+    max-width: 100% !important; /* Ensure the slider adapts to the container width */
+    overflow: hidden !important; /* Prevent overflow issues */
+}
+
+/* Centering the .row container */
+.row {
+    display: flex !important; /* Enable flexbox */
+    justify-content: center !important; /* Center content horizontally */
+    align-items: center !important; /* Center content vertically */
+    width: 100% !important; /* Ensure it takes the full width */
+}
+
+/* Slider images styling */
+.carousel-inner img {
+    max-height: 500px !important; /* Set a fixed height to standardize image size */
+    width: 100% !important; /* Ensure images stretch to fit the width of the container */
+    object-fit: cover !important; /* Ensure images maintain aspect ratio without distortion */
+    height: 100% !important; /* Make sure images stretch vertically */
+}
+
+/* Navigation icon style */
+.control-icon {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important; /* Center icons vertically */
+    z-index: 1 !important; /* Ensure icons are above images */
+}
+
+/* Bootstrap adjustments for navigation arrows */
+.carousel-control.right {
+    right: 0 !important;
+    left: auto !important;
+    background-repeat: repeat-x !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+.carousel-control.left {
+    left: 0 !important;
+    right: auto !important;
+    background-repeat: repeat-x !important;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+/* Caption Back Color */
+.back-light {
+    background-color: rgba(0, 0, 0, 0.60) !important;
+    line-height: 30px !important;
+    font-size: 14px !important;
+    padding: 5px !important; /* Add padding for better readability */
+}
+
+/* Adjust carousel indicators for consistency */
+.carousel-indicators li {
+    width: 15px !important; /* Make indicators slightly smaller */
+    height: 15px !important;
+    border: 3px solid #04bacf !important; /* Use a solid border with consistent color */
+    margin: 5px !important; /* Add spacing between indicators */
+    cursor: pointer !important; /* Add hover feedback */
+}
+
+.carousel-indicators .active {
+    background-color: #4fff61 !important; /* Highlight active indicator */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 300px !important; /* Adjust image height for smaller screens */
+        object-fit: cover !important; /* Ensure images cover the container properly */
+    }
+
+    .control-icon {
+        width: 30px !important; /* Smaller navigation icons */
+        height: 30px !important;
+    }
+
+    .carousel-indicators li {
+        width: 10px !important; /* Reduce size for smaller screens */
+        height: 10px !important;
+    }
+}
+
+/* Further adjustments for mobile screens to ensure responsiveness */
+@media (max-width: 480px) {
+    .carousel-inner img {
+        max-height: 250px !important; /* Further reduce image height for very small screens */
+    }
+}
+
+/*=====================================
+ BUTTON CODE STYLE 
+    ===================================*/
+.btn-style-1 {
+    color: #fff;
+    background-color: #4fff61;
+    border:none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+    .btn-style-1:hover {
+        color: #fff;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+.btn-style-4 {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #fff;
+    background: linear-gradient(to right, #04bacf, #b085cf);
+    border:none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+    .btn-style-4:hover {
+        color: #fff;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+.btn-style-2 {
+    color: #fff;
+    background: linear-gradient(to right, #04bacf, #b085cf);
+    border: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+    .btn-style-2:hover {
+        color: #fff;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .modal-content {
+        background-color: #fff;
+        margin: auto;
+        padding: 15px; /* Reduced padding for a smaller look */
+        border: 1px solid #888;
+        width: 20%; /* Reduced width for a smaller popup */
+        height: 40%;
+        text-align: center;
+        border-radius: 10px; /* Smooth edges */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
+        position: relative; /* Ensure the close button stays inside */
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 20px; /* Reduced size for the close button */
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 10px; /* Positioned closer to the top */
+        right: 10px; /* Positioned closer to the edge */
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Style for payment tabs */
+    .payment-tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0; /* Spacing between options */
+        cursor: pointer;
+    }
+    
+    .payment-tab img {
+        width: 100px; /* Increase size of logos */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px; /* Add spacing around images */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+    
+    .payment-tab img:hover {
+        transform: scale(1.1); /* Slightly enlarge on hover */
+    }
+    
+    .payment-tab p {
+        margin-top: 5px; /* Space between image and text */
+        font-size: 14px; /* Adjust text size */
+        color: #333;
+    }
+    /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 70%; /* Adjust modal width for tablets */
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 90%; /* Adjust modal width for mobile phones */
+        padding: 8px; /* Further reduce padding */
+    }
+}
+    
+    
+/*=====================================
+ ABOUT SECTION  STYLE 
+    ===================================*/
+#about {
+    padding-bottom: 100px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.icon-round {
+    margin-top: 30px;
+    font-size: 60px;
+    height: 128px;
+    width: 128px;
+    line-height: 130px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    background-color: #55068A;
+    color: #fff;
+}
+
+    .icon-round:hover {
+        background-color: #FF4F4F;
+        cursor: pointer;
+    }
+    .block2 {
+        margin-top: 49px;
+        background-color: #f8f8f8;
+        clear: both; /* Ensures that the block clears any floated elements before it */
+        overflow: hidden; /* Prevents content from overflowing the block */
+    }
+    
+    .block2 .title {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        padding: 22px 0 14px;
+        background-color: #04bacf;
+        font: 22px/20px 'Open Sans', sans-serif;
+        margin: 0; /* Prevents title margin from affecting layout */
+    }
+    
+    .block2 .pad {
+        padding: 41px 22px 19px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+    }
+
+
+/*=====================================
+ BUDGET SECTION  STYLE 
+    ===================================*/
+    #budget {
+        background: linear-gradient(to right, #04bacf, #b085cf);
+        color: #fff;
+        padding: 20px;
+        text-align: center !important; /* Ensure text alignment is centered */
+    }
+    
+    #budget .btn {
+        display: inline-block !important; /* Make the button inline and centerable */
+        margin: 20px auto !important; /* Center horizontally and add vertical spacing */
+        padding: 15px 30px !important; /* Ensure padding is consistent */
+        font-size: 16px !important; /* Make font size responsive */
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        color: #fff !important;
+        background-color: #FF4F4F !important;
+        border: none !important;
+        border-radius: 8px !important; /* Slightly rounded corners */
+        transition: all 0.3s ease-in-out !important; /* Smooth hover effects */
+    }
+    
+    #budget .btn:hover {
+        background-color: #55068A !important;
+        color: #fff !important;
+        transform: scale(1.05) !important; /* Slight scaling effect */
+    }
+    
+    @media (max-width: 768px) {
+        #budget {
+            padding: 15px !important; /* Reduce padding for smaller screens */
+        }
+        
+        #budget .btn {
+            width: 80% !important; /* Make button take up most of the width */
+            font-size: 14px !important; /* Adjust font size for smaller screens */
+        }
+    }
+    
+
+/*=====================================
+ VEDIO SECTION  STYLE 
+    ===================================*/
+#vedio-sec {
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.vedio-style {
+    border: 0px;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 20px;
+}
+/*=====================================
+  REVIEW STYLES 
+    ===================================*/
+.reviews-section {
+    background: linear-gradient(to right, #04bacf, #b085cf);
+    text-align: center;
+}
+
+    .reviews-section h2 {
+        padding-top: 50px;
+        color: #fff;
+    }
+
+.slide-custom {
+    min-height: 200px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.reviews-section h4 i {
+    padding: 5px;
+}
+
+.reviews-section h4 {
+    color: #fff;
+}
+
+/*=====================================
+  EVENTS STYLES 
+    ===================================*/
+#recent-events {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    background-color: #F7F7F7;
+}
+    #recent-events i {
+        margin-right:5px;
+        color:#FF4F4F;
+    }
+    #recent-events .col-xs-12.col-sm-4.col-md-3 {
+        padding: 0;
+    }
+
+.recent-events-wrap {
+    position: relative;
+    cursor: pointer;
+}
+
+#recent-events a:hover {
+    text-decoration: none;
+}
+
+.recent-events-wrap img {
+    width: 100%;
+}
+
+.recent-events-wrap .recent-events-inner {
+    top: 0;
+    background: transparent;
+    opacity: .8;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+    .recent-events-wrap .recent-events-inner h3 {
+        margin: 10px 0;
+    }
+
+        .recent-events-wrap .recent-events-inner h3 a {
+            font-size: 24px;
+            color: #fff;
+        }
+
+.recent-events-wrap .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0;
+    background-color: #55068A;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    padding: 30px;
+}
+
+    .recent-events-wrap .overlay .preview {
+        bottom: 0;
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 0;
+        background: transparent;
+        text-align: center;
+        color: #fff;
+    }
+
+.recent-events-wrap:hover .overlay {
+    opacity: 1;
+}
+
+/*=====================================
+   IMPACT STYLE 
+    ===================================*/
+#impact {
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+    #impact h4 {
+        color: #04bacf !important;
+    }
+
+
+
+.knob-sec {
+    text-align: center;
+}
+
+/*program style*/
+.program-block {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.program-block h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.program-block p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+/* General Styles */
+#implementation-strategy {
+    background-color: #f9f9f9;
+    padding-left: 20px;
+    margin: 20px auto; /* Center horizontally */
+    width: 95%;
+    max-width: 900px; /* Optional: Set a max-width */
+}
+
+#implementation-strategy h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.program-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+.program-section h3 {
+    font-size: 1.5rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.program-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.program-section p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.program-section li {
+    margin-bottom: 8px;
+}
+
+.program-section strong {
+    color: #007BFF;
+}
+
+.hidden-content {
+    display: block; /* Show content by default */
+}
+
+@media (max-width: 768px) {
+    .hidden-content {
+        display: none; /* Hide content on mobile */
+    }
+
+    .hidden-content.show {
+        display: block; /* Show content when the class 'show' is added */
+    }
+
+    .toggle-btn {
+        display: block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .toggle-btn {
+        display: none; /* Hide button on desktop */
+    }
+}
+
+/* Our Team Section Styles */
+#team {
+    padding: 60px 0;
+}
+
+#team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#team p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.team-member-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-photo {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member-card h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.team-member-card h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #999;
+}
+
+.team-member-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.social {
+    margin: 0 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-member-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+/*=====================================
+   CONTACT STYLE 
+    ===================================*/
+#contact {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    background-color: rgb(240, 240, 240);
+}
+.volunteer-content {
+    display: block; /* Initially, show the full content */
+}
+
+/* Hide 'See More' button in desktop view */
+@media (min-width: 768px) {
+    .see-more-btn {
+        display: none;
+    }
+}
+
+/* For mobile view, show 'See More' button and hide extra content */
+@media (max-width: 767px) {
+    .volunteer-content {
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Limit the visible content to 4 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+
+/*navigation section*/
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.25rem; /* Increased font size */
+    color: #333;
+    position: relative;
+}
+
+.tab-link:hover, .tab-link.active {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.tab-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(101, 101, 232); /* Underline color to match the tab text color */
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.tab-content {
+    display: none;
+    padding: 2rem;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.content-section {
+    padding: 2rem;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.program-block {
+    margin-bottom: 2rem;
+}
+
+.program-block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.program-block p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.maxheight {
+    min-height: 200px;
+    margin-bottom: 1rem;
+}
+
+.block2 {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.block2 .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.block2 .pad {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap; /* Maintain horizontal layout by wrapping */
+    }
+    .tab-link {
+        font-size: 1rem; /* Slightly reduce font size for smaller screens */
+        flex: 1 1 auto; /* Allow tabs to adjust flexibly */
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    .tab-content {
+        padding: 1rem;
+    }
+}
+
+/* Floating Social Media Icons Styling */
+.social-media {
+    position: fixed;
+    bottom: 60px; /* Increased bottom value to move the icons up */
+    right: 20px;
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    z-index: 9999; /* Ensure they are above other content */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+.social-icon {
+    color: white;
+    padding: 8px; /* Further reduced padding to make icons closer */
+    border-radius: 50%; /* Round shape */
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center; /* Center icons */
+    align-items: center; /* Align icons within the button */
+    width: 50px; /* Adjusted width for consistent size */
+    height: 50px; /* Adjusted height for consistent size */
+    margin-bottom: -8px; /* Keeps consistent spacing between icons */
+}
+
+/* Hover Effect */
+.social-icon:hover {
+    background-color: none; /* No background change on hover */
+}
+
+/* Customize Each Icon Individually */
+
+/* WhatsApp Icon */
+.social-icon.whatsapp {
+    font-size: 35px; /* Size of WhatsApp icon */
+    color: green;
+}
+
+/* Twitter Icon */
+.social-icon.twitter {
+    background-color: #1DA1F2;
+    font-size: 35px; /* Size of Twitter icon */
+}
+
+/* Instagram Icon */
+.social-icon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px; /* Adjusted size of Instagram icon */
+}
+
+/* Facebook Icon */
+.social-icon.facebook {
+    font-size: 35px; /* Size of Facebook icon */
+    color: blue;
+}
+
+/*=====================================
+  FOOTER STYLES 
+    ===================================*/
+    footer {
+        background: linear-gradient(to right, #04bacf, #b085cf);
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+/*=====================================
+  SCROLL UP STYLES 
+    ===================================*/
+
+a.scrollup {
+    background: #730EB8;
+height: 32px;
+width: 32px;
+color: #fff;
+font-size: 18px;
+line-height: 32px;
+text-align: center;
+text-decoration: none;
+position: fixed;
+bottom: 10px;
+right: 10px;
+z-index: 9999;
+opacity: 0.5;
+}
+/*=====================================
+  PRELOADER STYLES 
+    ===================================*/
+#pre-div {
+    background-color: #fff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+#loader {
+    background-image: url("../img/loader.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}

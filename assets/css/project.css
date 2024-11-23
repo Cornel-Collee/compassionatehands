@@ -1,0 +1,154 @@
+/* Projects Section */
+.projects-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  justify-items: center; /* Center align cards */
+  text-align: center;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px; /* Prevent cards from becoming too wide */
+  width: 100%; /* Ensure cards take up available space */
+  height: auto; /* Let height adapt to content */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto; /* Prevent image stretching */
+  object-fit: cover; /* Crop proportionally */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar .progress {
+  background: #4caf50;
+  height: 10px;
+  border-radius: 4px;
+  width: 50%; /* Set dynamically */
+}
+
+.project-card button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.project-card button:hover {
+  background: #0056b3;
+}
+
+.see-more {
+  margin-top: 20px;
+}
+
+.see-more a {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.see-more a:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 768px) {
+  .projects-section {
+      grid-template-columns: 1fr 1fr; /* Two columns */
+      padding: 20px 10px; /* Adjust padding */
+      gap: 15px; /* Reduce gap for smaller screens */
+  }
+
+  .project-card {
+      margin: 10px; /* Add spacing between cards */
+  }
+}
+
+/* Small Screens (Mobile) */
+@media screen and (max-width: 480px) {
+  .projects-section {
+      grid-template-columns: 1fr; /* Single column */
+      padding: 10px; /* Reduce padding */
+      gap: 10px; /* Tighten gap for mobile */
+  }
+
+  .project-card {
+      margin: 15px auto; /* Center align and space cards */
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .project-card img {
+      height: 180px; /* Ensure image height is not too large */
+      object-fit: cover; /* Maintain proportional cropping */
+  }
+
+  .project-card h3 {
+      font-size: 18px; /* Adjust font size */
+  }
+
+  .project-card p {
+      font-size: 13px; /* Adjust font size */
+  }
+
+  .project-card button {
+      padding: 8px 16px; /* Adjust button size */
+      font-size: 14px; /* Adjust font size */
+  }
+}

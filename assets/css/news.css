@@ -1,0 +1,167 @@
+/* News Page Styles */
+.news-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.news-content {
+  width: 70%;
+  padding: 20px;
+}
+
+.news-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.news-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.news-hero p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.main-news-article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.main-news-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.main-news-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.main-news-date {
+  font-size: 1rem;
+  color: #888;
+}
+
+.main-news-title {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.main-news-summary {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.main-news-readmore {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.main-news-social a {
+  margin-right: 10px;
+}
+
+.featured-news article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.featured-news img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.featured-news h3 {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.latest-news .news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.latest-news .news-grid article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.latest-news .news-grid article img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.sidebar-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-section ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-section form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.sidebar-section form button {
+  padding: 10px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .news-page-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .news-content {
+      width: 100%;
+  }
+
+  .latest-news .news-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .sidebar-section form {
+      flex-direction: row;
+  }
+}
