@@ -174,5 +174,20 @@ $(document).ready(function () {
     });
 });
 
+    // Custom Toggle Script for Dropdown
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseover', function () {
+            this.querySelector('.dropdown-menu').style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseout', function () {
+            this.querySelector('.dropdown-menu').style.display = 'none';
+        });
+    });
+});
+
 
 }(jQuery));
