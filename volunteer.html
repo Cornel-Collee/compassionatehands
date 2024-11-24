@@ -41,7 +41,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="donate.html">DONATE</a></li>
                             <li><a href="volunteer.html">VOLUNTEER</a></li>
-                            <li><a href="join.html">JOIN OUR TEAM</a></li>
+                            <!--<li><a href="join.html">JOIN OUR TEAM</a></li>-->
                         </ul>
                     </li>
                     <li><a href="project.html">PROJECTS <i class="fa fa-bars"></i></a></li>
@@ -49,6 +49,14 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Navigation Tabs -->
+<div class="tabs">
+  <button class="tab-link active" data-tab="volunteer-section">Volunteer</button>
+  <button class="tab-link" data-tab="join-team-section">Join Our Team</button>
+</div>
+
 
 <!-- Volunteer Section -->
 <div id="volunteer-section" class="tab-content active">
@@ -74,6 +82,49 @@
                   style="border: none;">
                   Loading…
               </iframe>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Join Our Team Section -->
+<div id="join-team-section" class="tab-content">
+  <div class="row text-center" data-scroll-reveal="enter from the bottom after .5s">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+          <h2>Join Our Team</h2>
+          <p>We are looking for passionate and dedicated individuals to join our growing team. We offer a collaborative work environment where you can make a direct impact on the lives of those in need.</p>
+          <h3>Available Positions:</h3>
+          <ul>
+              <li>Project Manager</li>
+              <li>Program Coordinator</li>
+              <li>Marketing and Outreach Specialist</li>
+          </ul>
+          <p>If you're interested in applying, please fill out the application form below and upload your resume.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4" data-scroll-reveal="enter from the right after .8s">
+          <h3>Application Form</h3>
+          <div id="join-form" class="join-form">
+              <form>
+                  <div class="form-group">
+                      <input type="text" class="form-control" required="required" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" required="required" placeholder="Your Email">
+                  </div>
+                  <div class="form-group">
+                      <input type="tel" class="form-control" required="required" placeholder="Your Phone Number">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" required="required" placeholder="Position Applied For">
+                  </div>
+                  <div class="form-group">
+                      <label for="resume">Upload Your Resume</label>
+                      <input type="file" class="form-control" id="resume" name="resume" required="required">
+                  </div>
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-style-2">Submit Application</button>
+                  </div>
+              </form>
           </div>
       </div>
   </div>
