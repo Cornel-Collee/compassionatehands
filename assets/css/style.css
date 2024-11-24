@@ -243,6 +243,39 @@ h2:after {
     }
 }
 
+
+/* DROPDOWN MENU STYLING*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin-top: 10px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
 /*=====================================
  MAIN  HEADER SECTION  STYLE 
     ===================================*/
