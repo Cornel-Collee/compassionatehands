@@ -16,238 +16,215 @@
     
 </head>
 <body>
-  <div id="pre-div">
-    <div id="loader"></div>
-</div>
-<div id="home" class="navbar navbar-default move-me">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="logo-container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/realimg/comp-Photoroom.png" class="navbar-brand-logo" alt="Logo">
-                </a>
+    <div id="pre-div">
+        <div id="loader"></div>
+    </div>
+    <div id="home" class="navbar navbar-default move-me">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo-container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/realimg/comp-Photoroom.png" class="navbar-brand-logo" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">HOME <i class="fa fa-bars"></i></a></li>
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US <i class="fa fa-bars"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="who.html">WHO WE ARE</a></li>
+                            <li><a href="mission.html">OUR MISSION</a></li>
+                            <li><a href="programs.html">OUR PROGRAMS</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="new.html">NEWS & PRESS <i class="fa fa-bars"></i></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">GET INVOLVED <i class="fa fa-bars"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="donate.html">DONATE</a></li>
+                            <li><a href="volunteer.html">VOLUNTEER</a></li>
+                            <!--<li><a href="join.html">JOIN OUR TEAM</a></li>-->
+                        </ul>
+                    </li>
+                    <li><a href="project.html">PROJECTS <i class="fa fa-bars"></i></a></li>
+                </ul>
             </div>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">HOME <i class="fa fa-bars"></i></a></li>
-                
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US <i class="fa fa-bars"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="who.html">WHO WE ARE</a></li>
-                        <li><a href="mission.html">OUR MISSION</a></li>
-                        <li><a href="programs.html">OUR PROGRAMS</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="new.html">NEWS & PRESS <i class="fa fa-bars"></i></a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">GET INVOLVED <i class="fa fa-bars"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="donate.html">DONATE</a></li>
-                        <li><a href="volunteer.html">VOLUNTEER</a></li>
-                        <!--<li><a href="join.html">JOIN OUR TEAM</a></li>-->
-                    </ul>
-                </li>
-                <li><a href="project.html">PROJECTS <i class="fa fa-bars"></i></a></li>
-            </ul>
-        </div>
     </div>
-</div>
-
-<!-- Contact Info Bar -->
-<!--<div class="contact-bar">
-    <div class="container">
-        <ul class="nav contact-info">
-            <li><a href="mailto:danombija1000@gmail.com"><i class="fa fa-envelope-o"></i> danombija1000@gmail.com</a></li>
-            <li><a href="tel:+254792568190"><i class="fa fa-phone"></i> +254 792 568 190</a></li>
-            <li><a href="http://www.compassionatehand.com"><i class="fa fa-globe"></i> www.compassionatehand.com</a></li>
-        </ul>
-    </div>
-</div>-->
-
+    
     <section class="donation-banner">
         <div class="overlay">
           <h1>Donate to Projects</h1>
         </div>
       </section>
-    <div class="projects-section">
-      <div class="project-card">
+      <div class="projects-section">
+        <div class="project-card">
           <img src="images/project1.jpg" alt="Empower a Girl: For Self-Reliance">
           <h3>Empower a Girl: For Self-Reliance</h3>
           <p>Help influence policymakers and educate youth. Goal: $200,000</p>
           <div class="progress-bar">
-              <div class="progress" style="width: 89.53%;"></div>
+            <div class="progress" style="width: 89.53%;"></div>
           </div>
           <p>Raised: $179,056</p>
-          <div class="donation-input-wrapper">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="danombija1000@gmail.com"> 
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Empower a Girl: For Self-Reliance">
+            <div class="donation-input-wrapper">
               <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
+              <input type="number" name="amount" placeholder="Enter amount" class="donation-input">
+            </div>
+            <input type="submit" value="DONATE" class="donate-button"
+              style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+      
+        <div class="project-card">
           <img src="images/project2.jpg" alt="Educate 500 Orphans">
           <h3>Educate 500 Orphans</h3>
           <p>Provide education to orphans. Goal: $100,000</p>
           <div class="progress-bar">
-              <div class="progress" style="width: 66.47%;"></div>
+            <div class="progress" style="width: 66.47%;"></div>
           </div>
           <p>Raised: $66,468</p>
-          <div class="donation-input-wrapper">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="danombija1000@gmail.com"> 
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Educate 500 Orphans">
+            <div class="donation-input-wrapper">
               <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project3.jpg" alt="New Project Example">
-          <h3>New Project</h3>
-          <p>Support this new project and make a difference. Goal: $150,000</p>
+              <input type="number" name="amount" placeholder="Enter amount" class="donation-input">
+            </div>
+            <input type="submit" value="DONATE" class="donate-button"
+              style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+      
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Healthcare for All">
+          <h3>Healthcare for All</h3>
+          <p>Provide basic healthcare to remote areas. Goal: $120,000</p>
           <div class="progress-bar">
-              <div class="progress" style="width: 50%;"></div>
+            <div class="progress" style="width: 45%;"></div>
           </div>
-          <p>Raised: $75,000</p>
-          <div class="donation-input-wrapper">
+          <p>Raised: $54,000</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="danombija1000@gmail.com"> 
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Healthcare for All">
+            <div class="donation-input-wrapper">
               <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project4.jpg" alt="Project 4">
-          <h3>Project 4</h3>
-          <p>Description of Project 4. Goal: $250,000</p>
+              <input type="number" name="amount" placeholder="Enter amount" class="donation-input">
+            </div>
+            <input type="submit" value="DONATE" class="donate-button"
+              style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+      
+        <div class="project-card">
+          <img src="images/project4.jpg" alt="Clean Water for Villages">
+          <h3>Clean Water for Villages</h3>
+          <p>Build wells to provide clean water. Goal: $80,000</p>
           <div class="progress-bar">
-              <div class="progress" style="width: 75%;"></div>
+            <div class="progress" style="width: 72.5%;"></div>
           </div>
-          <p>Raised: $187,500</p>
-          <div class="donation-input-wrapper">
+          <p>Raised: $58,000</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="danombija1000@gmail.com"> 
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Clean Water for Villages">
+            <div class="donation-input-wrapper">
               <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project5.jpg" alt="Project 5">
-          <h3>Project 5 </h3>
-          <p>Description of Project 5. Goal: $120,000</p>
+              <input type="number" name="amount" placeholder="Enter amount" class="donation-input">
+            </div>
+            <input type="submit" value="DONATE" class="donate-button"
+              style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+      
+        <div class="project-card">
+          <img src="images/project5.jpg" alt="Provide Shelter for Homeless">
+          <h3>Provide Shelter for Homeless</h3>
+          <p>Build housing for families in need. Goal: $150,000</p>
           <div class="progress-bar">
-              <div class="progress" style="width: 90%;"></div>
+            <div class="progress" style="width: 33.33%;"></div>
           </div>
-          <p>Raised: $108,000</p>
-          <div class="donation-input-wrapper">
+          <p>Raised: $50,000</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="danombija1000@gmail.com"> 
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Provide Shelter for Homeless">
+            <div class="donation-input-wrapper">
               <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project6.jpg" alt="Project 6">
-          <h3>Project 6</h3>
-          <p>Description of Project 6. Goal: $300,000</p>
+              <input type="number" name="amount" placeholder="Enter amount" class="donation-input">
+            </div>
+            <input type="submit" value="DONATE" class="donate-button"
+              style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
+      
+        <div class="project-card">
+          <img src="images/project6.jpg" alt="Feed the Hungry">
+          <h3>Feed the Hungry</h3>
+          <p>Provide meals for underprivileged families. Goal: $50,000</p>
           <div class="progress-bar">
-              <div class="progress" style="width: 60%;"></div>
+            <div class="progress" style="width: 80%;"></div>
           </div>
-          <p>Raised: $180,000</p>
-          <div class="donation-input-wrapper">
+          <p>Raised: $40,000</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="danombija1000@gmail.com"> 
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Feed the Hungry">
+            <div class="donation-input-wrapper">
               <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
+              <input type="number" name="amount" placeholder="Enter amount" class="donation-input">
+            </div>
+            <input type="submit" value="DONATE" class="donate-button"
+              style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+          </form>
+        </div>
       </div>
-  
-      <div class="project-card">
-          <img src="images/project7.jpg" alt="Project 7">
-          <h3>Project 7</h3>
-          <p>Description of Project 7. Goal: $180,000</p>
-          <div class="progress-bar">
-              <div class="progress" style="width: 85%;"></div>
-          </div>
-          <p>Raised: $153,000</p>
-          <div class="donation-input-wrapper">
-              <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project8.jpg" alt="Project 8">
-          <h3>Project 8</h3>
-          <p>Description of Project 8. Goal: $100,000</p>
-          <div class="progress-bar">
-              <div class="progress" style="width: 45%;"></div>
-          </div>
-          <p>Raised: $45,000</p>
-          <div class="donation-input-wrapper">
-              <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project9.jpg" alt="Project 9">
-          <h3>Project 9</h3>
-          <p>Description of Project 9. Goal: $175,000</p>
-          <div class="progress-bar">
-              <div class="progress" style="width: 70%;"></div>
-          </div>
-          <p>Raised: $122,500</p>
-          <div class="donation-input-wrapper">
-              <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project10.jpg" alt="Project 10">
-          <h3>Project 10</h3>
-          <p>Description of Project 10. Goal: $220,000</p>
-          <div class="progress-bar">
-              <div class="progress" style="width: 95%;"></div>
-          </div>
-          <p>Raised: $209,000</p>
-          <div class="donation-input-wrapper">
-              <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <div class="project-card">
-          <img src="images/project11.jpg" alt="Project 11">
-          <h3>Project 11</h3>
-          <p>Description of Project 11. Goal: $140,000</p>
-          <div class="progress-bar">
-              <div class="progress" style="width: 65%;"></div>
-          </div>
-          <p>Raised: $91,000</p>
-          <div class="donation-input-wrapper">
-              <span class="currency-symbol">$</span>
-              <input type="number" placeholder="Enter amount" class="donation-input">
-          </div>
-          <button class="donate-button">DONATE</button>
-      </div>
-  
-      <!--<div class="see-more">
-          <a href="involve.html#fund-a-project">See More</a>
-      </div>-->
-  </div>
+      
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          const projectCards = document.querySelectorAll('.project-card');
+      
+          projectCards.forEach(card => {
+            const form = card.querySelector('form');
+            const donationInput = card.querySelector('.donation-input');
+      
+            form.addEventListener('submit', (event) => {
+              event.preventDefault(); 
+      
+              const amount = donationInput.value.trim();
+              if (amount && !isNaN(amount) && amount > 0) {
+                form.action = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=danombija1000@gmail.com&currency_code=USD&amount=${amount}`;
+                form.submit();
+              } else {
+                alert("Please enter a valid amount.");
+              }
+            });
+          });
+        });
+      </script>
+      
 
   <footer>
     <div class="footer-container">
@@ -262,7 +239,7 @@
             Website designed by Cornel
         </div>  
     </div>
-</footer>  
+</footer> 
 
     <div class="move-me">
         <a href="#home" class="scrollup"><i class="fa fa-chevron-up"></i></a>
