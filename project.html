@@ -200,8 +200,25 @@
           </form>
         </div>
       </div>
-      
-      
+
+  <footer>
+    <div class="footer-container">
+        <ul class="nav contact-info">
+            <li><a href="mailto:danombija1000@gmail.com"><i class="fa fa-envelope-o"></i> danombija1000@gmail.com</a></li>
+            <li><a href="tel:+254792568190"><i class="fa fa-phone"></i> +254 792 568 190</a></li>
+            <li><a href="http://www.compassionatehand.com"><i class="fa fa-globe"></i> www.compassionatehand.com</a></li>
+        </ul>
+        <div class="copy">
+            <strong>Compassionate Hands</strong> © <span id="copyright-year"></span> 
+            | <a href="#">Privacy Policy</a> <br>
+            Website designed by Cornel
+        </div>  
+    </div>
+</footer> 
+
+    <div class="move-me">
+        <a href="#home" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+    </div>
       <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           const projectCards = document.querySelectorAll('.project-card');
@@ -224,72 +241,7 @@
           });
         });
       </script>
-      
 
-  <footer>
-    <div class="footer-container">
-        <ul class="nav contact-info">
-            <li><a href="mailto:danombija1000@gmail.com"><i class="fa fa-envelope-o"></i> danombija1000@gmail.com</a></li>
-            <li><a href="tel:+254792568190"><i class="fa fa-phone"></i> +254 792 568 190</a></li>
-            <li><a href="http://www.compassionatehand.com"><i class="fa fa-globe"></i> www.compassionatehand.com</a></li>
-        </ul>
-        <div class="copy">
-            <strong>Compassionate Hands</strong> © <span id="copyright-year"></span> 
-            | <a href="#">Privacy Policy</a> <br>
-            Website designed by Cornel
-        </div>  
-    </div>
-</footer> 
-
-    <div class="move-me">
-        <a href="#home" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-    </div>
-<script>
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const donateButtons = document.querySelectorAll('.donate-button');
-
-    donateButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // 1. Get the project details
-            const projectCard = button.closest('.project-card');
-            const projectTitle = projectCard.querySelector('h3').textContent;
-            const currentAmount = projectCard.querySelector('.progress-bar p').textContent; 
-            const goalAmount = projectCard.querySelector('p:nth-of-type(1)').textContent.split(': ')[1]; 
-
-            // 2. Get the donation amount
-            const donationInput = projectCard.querySelector('.donation-input');
-            const donationAmount = parseFloat(donationInput.value.trim());
-
-            // 3. Basic validation
-            if (isNaN(donationAmount) || donationAmount <= 0) {
-                alert("Please enter a valid donation amount.");
-                return;
-            }
-
-            // 4. Update the progress bar (optional) - you'll need to calculate the new width
-            const currentRaised = parseFloat(currentAmount.split(': ')[1].replace(/[^0-9.-]+/g,""));
-            const newRaised = currentRaised + donationAmount;
-            const goal = parseFloat(goalAmount.replace(/[^0-9.-]+/g,""));
-            const newProgress = (newRaised / goal) * 100; 
-            projectCard.querySelector('.progress').style.width = `${newProgress}%`;
-
-            // 5. Update the raised amount
-            projectCard.querySelector('.progress-bar p').textContent = `Raised: $${newRaised.toFixed(2)}`; 
-
-            // 6. Optionally send the data to your server or perform other actions
-            // You can use AJAX to send the data to a server-side script for processing
-            // or store the data locally using localStorage, etc.
-
-            // 7. Confirmation message (replace with your actual donation processing logic)
-            alert(`Thank you for your donation of $${donationAmount.toFixed(2)} to ${projectTitle}!`);
-
-            // 8. Reset the input field
-            donationInput.value = '';
-        });
-    });
-});
-</script>
     <script src="assets/js/jquery-1.10.2.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
