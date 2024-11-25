@@ -17,330 +17,320 @@
 <body>
   <div id="pre-div">
     <div id="loader"></div>
-</div>
-<div id="home" class="navbar navbar-default move-me">
+  </div>
+  <div id="home" class="navbar navbar-default move-me">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="logo-container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/realimg/comp-Photoroom.png" class="navbar-brand-logo" alt="Logo">
-                </a>
-            </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="logo-container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/realimg/comp-Photoroom.png" class="navbar-brand-logo" alt="Logo">
+          </a>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">HOME <i class="fa fa-bars"></i></a></li>
-                
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US <i class="fa fa-bars"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="who.html">WHO WE ARE</a></li>
-                        <li><a href="mission.html">OUR MISSION</a></li>
-                        <li><a href="programs.html">OUR PROGRAMS</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="new.html">NEWS & PRESS <i class="fa fa-bars"></i></a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">GET INVOLVED <i class="fa fa-bars"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="donate.html">DONATE</a></li>
-                        <li><a href="volunteer.html">VOLUNTEER</a></li>
-                        <!--<li><a href="join.html">JOIN OUR TEAM</a></li>-->
-                    </ul>
-                </li>
-                <li><a href="project.html">PROJECTS <i class="fa fa-bars"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">HOME <i class="fa fa-bars"></i></a></li>
 
-      <!-- Gifts Section -->
-<div class="gifts-section">
-<h2>Give a Special Gift This Holiday Season</h2>
-<p>Make a meaningful impact by gifting essential items to families in need. Choose from our special gifts below and bring joy this holiday season.</p>
-<div class="gifts-grid">
-    <!-- Gift 1 -->
-    <div class="gift-card">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US <i class="fa fa-bars"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="who.html">WHO WE ARE</a></li>
+              <li><a href="mission.html">OUR MISSION</a></li>
+              <li><a href="programs.html">OUR PROGRAMS</a></li>
+            </ul>
+          </li>
+
+          <li><a href="new.html">NEWS & PRESS <i class="fa fa-bars"></i></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">GET INVOLVED <i class="fa fa-bars"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="donate.html">DONATE</a></li>
+              <li><a href="volunteer.html">VOLUNTEER</a></li>
+            </ul>
+          </li>
+          <li><a href="project.html">PROJECTS <i class="fa fa-bars"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="gifts-section">
+    <h2>Give a Special Gift This Holiday Season</h2>
+    <p>Make a meaningful impact by gifting essential items to families in need. Choose from our special
+      gifts below and bring joy this holiday season.</p>
+    <div class="gifts-grid">
+      <div class="gift-card">
         <img src="images/gift-christmas.jpg" alt="Gift a Family This Christmas">
         <h3>Gift a Family This Christmas</h3>
         <p>Provide essential supplies and holiday cheer to a family in need.</p>
-        <select>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Gift a Family This Christmas" />
+          <select name="amount">
             <option value="25">$25</option>
             <option value="50">$50</option>
             <option value="75">$75</option>
             <option value="100">$100</option>
-        </select>
-        <button>GIFT NOW</button>
-    </div>
-    <!-- Gift 2 -->
-    <div class="gift-card">
+          </select>
+          <input type="submit" value="GIFT NOW" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+      </div>
+      <div class="gift-card">
         <img src="images/gift-goat.jpg" alt="Gift a Family a Goat">
         <h3>Gift a Family a Goat</h3>
         <p>Help a family sustain themselves with a goat, providing milk and potential income.</p>
-        <select>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Gift a Family a Goat" />
+          <select name="amount">
             <option value="25">$25</option>
             <option value="50">$50</option>
             <option value="75">$75</option>
             <option value="100">$100</option>
-        </select>
-        <button>GIFT NOW</button>
+          </select>
+          <input type="submit" value="GIFT NOW" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+      </div>
     </div>
-    <!-- Add more gifts as needed -->
-</div>
-</div>
+  </div>
 
-<!-- Donation Options Section -->
-<div class="donation-options-section">
-<h2>How Can You Donate to Children in Need?</h2>
-<p>Your donations can help children living in poverty.</p>
-<div class="donation-grid">
-    <!-- Existing Donation Option -->
-    <div class="donation-card">
+  <div class="donation-options-section">
+    <h2>How Can You Donate to Children in Need?</h2>
+    <p>Your donations can help children living in poverty.</p>
+    <div class="donation-grid">
+      <div class="donation-card">
         <img src="images/moms-babies.jpg" alt="Help Moms and Babies Survive">
         <h3>Help Moms and Babies Survive</h3>
         <p>Help pregnant moms and babies get medical, nutritional, emotional and spiritual support.</p>
-        <select>
-            <option value="one-time">One Time</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <!-- Add more options if needed -->
-        </select>
-        <input type="text" placeholder="Enter amount">
-        <button>DONATE</button>
-    </div>
-    <div class="donation-card">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Help Moms and Babies Survive" />
+          <select name="amount">
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+            <option value="100">$100</option>
+          </select>
+          <input type="submit" value="DONATE" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+      </div>
+      <div class="donation-card">
         <img src="images/unsponsored-children.jpg" alt="Unsponsored Children's Fund">
         <h3>Unsponsored Children's Fund</h3>
         <p>Your donation provides aid, nutritious food and medical care to children waiting for sponsors.</p>
-        <select>
-            <option value="one-time">One Time</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <!-- Add more options if needed -->
-        </select>
-        <input type="text" placeholder="Enter amount">
-        <button>DONATE</button>
-    </div>
-    <!-- New Donation Options -->
-    <div class="donation-card">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Unsponsored Children's Fund" />
+          <select name="amount">
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+            <option value="100">$100</option>
+          </select>
+          <input type="submit" value="DONATE" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+      </div>
+      <div class="donation-card">
         <img src="images/new-option1.jpg" alt="Education Support Fund">
         <h3>Education Support Fund</h3>
         <p>Help provide educational materials and support to children in need.</p>
-        <select>
-            <option value="one-time">One Time</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <!-- Add more options if needed -->
-        </select>
-        <input type="text" placeholder="Enter amount">
-        <button>DONATE</button>
-    </div>
-    <div class="donation-card">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Education Support Fund" />
+          <select name="amount">
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+            <option value="100">$100</option>
+          </select>
+          <input type="submit" value="DONATE" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+      </div>
+      <div class="donation-card">
         <img src="images/new-option2.jpg" alt="Medical Aid Fund">
         <h3>Medical Aid Fund</h3>
         <p>Ensure children receive necessary medical treatments and healthcare.</p>
-        <select>
-            <option value="one-time">One Time</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <!-- Add more options if needed -->
-        </select>
-        <input type="text" placeholder="Enter amount">
-        <button>DONATE</button>
-    </div>
-    <div class="donation-card">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Medical Aid Fund" />
+          <select name="amount">
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+            <option value="100">$100</option>
+          </select>
+          <input type="submit" value="DONATE" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+      </div>
+      <div class="donation-card">
         <img src="images/new-option3.jpg" alt="Nutritional Support Fund">
         <h3>Nutritional Support Fund</h3>
         <p>Provide nutritious meals to children suffering from malnutrition.</p>
-        <select>
-            <option value="one-time">One Time</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <!-- Add more options if needed -->
-        </select>
-        <input type="text" placeholder="Enter amount">
-        <button>DONATE</button>
-    </div>
-    <div class="donation-card">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Nutritional Support Fund" />
+          <select name="amount">
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+            <option value="100">$100</option>
+          </select>
+          <input type="submit" value="DONATE" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+      </div>
+      <div class="donation-card">
         <img src="images/new-option4.jpg" alt="Emergency Relief Fund">
         <h3>Emergency Relief Fund</h3>
         <p>Help children and families affected by emergencies and natural disasters.</p>
-        <select>
-            <option value="one-time">One Time</option>
-            <option value="Weekly">Weekly</option>
-            <option value="Monthly">Monthly</option>
-            <!-- Add more options if needed -->
-        </select>
-        <input type="text" placeholder="Enter amount">
-        <button>DONATE</button>
-    </div>
-</div>
-</div>
-      <section class="impact-of-giving">
-          <div class="container">
-              <h2>The Impact of Your Giving</h2>
-              <p>See how your donation can make a difference in the lives of children in need.</p>
-
-              <div class="impact-items">
-                  <div class="item">
-                      <img src="assets/img/impact-food.png" alt="Food">
-                      <h3>$25 provides food for one child for a month</h3>
-                  </div>
-                  <div class="item">
-                      <img src="assets/img/impact-shelter.png" alt="Shelter">
-                      <h3>$50 provides safe shelter for one child for a month</h3>
-                  </div>
-                  <div class="item">
-                      <img src="assets/img/impact-education.png" alt="Education">
-                      <h3>$100 provides education for one child for a year</h3>
-                  </div>
-                  <div class="item">
-                      <img src="assets/img/impact-healthcare.png" alt="Healthcare">
-                      <h3>$150 provides basic healthcare for one child for a year</h3>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <div class="col-lg-12 col-md-12 text-center">
-        <a href="assets/financial budget form/compassionate_hands_budget.xlsx" class="btn btn-style-4 btn-lg ">DOWNLOAD BUDGET</a>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="danombija1000@gmail.com" /> 
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="item_name" value="Emergency Relief Fund" />
+          <select name="amount">
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="75">$75</option>
+            <option value="100">$100</option>
+          </select>
+          <input type="submit" value="DONATE" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
       </div>
-      <div class="row">
-        <div class="col-sm-5 ">
-            <div  data-scroll-reveal="enter from the left after .5s">
-                <h4>Provided Education </h4>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                        <span >95%</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  data-scroll-reveal="enter from the left after .7s">
-                <h4>Food Resources </h4>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                        <span >75%</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  data-scroll-reveal="enter from the left after .9s">
-                <h4>Shelter Arrangement</h4>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                        <span >90%</span>
-                    </div>
-                </div>
-            </div>
-
-            <div  data-scroll-reveal="enter from the left after 1.1s">
-                <h4>Fund Utilized</h4>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 98%">
-                        <span >98%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-7 knob-sec" data-scroll-reveal="enter from the right after .8s">
-            <h4>HELP TO RAISE FUND</h4>
-            <h5>Total Requirement of funds is <b>$ 3,90,000</b>  </h5>
-            <br>
-            <input type="text" class="dial" data-step="10000"  data-fgcolor="#ff0000" data-thickness=".3" value="310345" data-min="90" data-max=" 390000" data-displayprevious="true" >
-            <h5>$ 3,10,345  Funds raised till date</h5>
-        </div>
     </div>
-</div>
-</div>
-<footer>
-  <div class="footer-container">
+  </div>
+  <section class="impact-of-giving">
+    <div class="container">
+      <h2>The Impact of Your Giving</h2>
+      <p>See how your donation can make a difference in the lives of children in need.</p>
+
+      <div class="impact-items">
+        <div class="item">
+          <img src="assets/img/impact-food.png" alt="Food">
+          <h3>$25 provides food for one child for a month</h3>
+        </div>
+        <div class="item">
+          <img src="assets/img/impact-shelter.png" alt="Shelter">
+          <h3>$50 provides safe shelter for one child for a month</h3>
+        </div>
+        <div class="item">
+          <img src="assets/img/impact-education.png" alt="Education">
+          <h3>$100 provides education for one child for a year</h3>
+        </div>
+        <div class="item">
+          <img src="assets/img/impact-healthcare.png" alt="Healthcare">
+          <h3>$150 provides basic healthcare for one child for a year</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
       <ul class="nav contact-info">
-          <li><a href="mailto:danombija1000@gmail.com"><i class="fa fa-envelope-o"></i> danombija1000@gmail.com</a></li>
-          <li><a href="tel:+254792568190"><i class="fa fa-phone"></i> +254 792 568 190</a></li>
-          <li><a href="http://www.compassionatehand.com"><i class="fa fa-globe"></i> www.compassionatehand.com</a></li>
+        <li><a href="mailto:danombija1000@gmail.com"><i class="fa fa-envelope-o"></i>
+            danombija1000@gmail.com</a></li>
+        <li><a href="tel:+254792568190"><i class="fa fa-phone"></i> +254 792 568 190</a></li>
+        <li><a href="http://www.compassionatehand.com"><i class="fa fa-globe"></i>
+            www.compassionatehand.com</a></li>
       </ul>
       <div class="copy">
-          <strong>Compassionate Hands</strong> © <span id="copyright-year"></span> 
-          | <a href="#">Privacy Policy</a> <br>
-          Website designed by Cornel
-      </div>  
-  </div>
-</footer> 
+        <strong>Compassionate Hands</strong> © <span id="copyright-year"></span>
+        | <a href="#">Privacy Policy</a> <br>
+        Website designed by Cornel
+      </div>
+    </div>
+  </footer>
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const donationButtons = document.querySelectorAll('.donation-amounts button');
-        const donateButton = document.querySelector('.donate-button');
-        const otherButton = document.getElementById('other-button');
-        const customAmountContainer = document.getElementById('custom-amount-container');
-        const customAmountInput = document.getElementById('custom-amount-input');
-        const setCustomAmountButton = document.getElementById('set-custom-amount');
-        let selectedAmount = "$200"; // Default selected amount
-
-        // Add click event to each donation button
-        donationButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Remove 'selected' class from all buttons
-                donationButtons.forEach(btn => btn.classList.remove('selected'));
-                // Add 'selected' class to clicked button
-                button.classList.add('selected');
-                // Hide custom amount container if it's shown
-                customAmountContainer.style.display = 'none';
-                // Update the selected amount for preset buttons
-                selectedAmount = button.textContent;
-                // Update the donate button text
-                donateButton.textContent = `DONATE ${selectedAmount}`;
-            });
+      const donationButtons = document.querySelectorAll('.donation-amounts button');
+      const donateButton = document.querySelector('.donate-button'); 
+      const otherButton = document.getElementById('other-button');
+      const customAmountContainer = document.getElementById('custom-amount-container');
+      const customAmountInput = document.getElementById('custom-amount-input');
+      const setCustomAmountButton = document.getElementById('set-custom-amount');
+      let selectedAmount = "$200"; // Default selected amount
+    
+      // Add click event to each donation button
+      donationButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove 'selected' class from all buttons
+          donationButtons.forEach(btn => btn.classList.remove('selected'));
+          // Add 'selected' class to clicked button
+          button.classList.add('selected');
+          // Hide custom amount container if it's shown
+          customAmountContainer.style.display = 'none';
+          // Update the selected amount for preset buttons
+          selectedAmount = button.textContent;
+          // Update the donate button text
+          donateButton.textContent = `DONATE ${selectedAmount}`;
         });
-
-        // Add click event to the "Other" button
-        otherButton.addEventListener('click', function() {
-            // Remove 'selected' class from all buttons
-            donationButtons.forEach(btn => btn.classList.remove('selected'));
-            // Add 'selected' class to "Other" button
-            otherButton.classList.add('selected');
-            // Show custom amount container
-            customAmountContainer.style.display = 'flex';
-            // Focus on the input field
-            customAmountInput.focus();
-        });
-
-        // Add click event to set custom amount button
-        setCustomAmountButton.addEventListener('click', function() {
-            const customAmount = customAmountInput.value.trim();
-            if (customAmount && !isNaN(customAmount) && customAmount > 0) {
-                // Update the selected amount to custom amount
-                selectedAmount = `$${customAmount}`;
-                // Update the donate button text
-                donateButton.textContent = `DONATE ${selectedAmount}`;
-                // Hide custom amount container
-                customAmountContainer.style.display = 'none';
-                // Reset input field
-                customAmountInput.value = '';
-            } else {
-                alert("Please enter a valid amount.");
-            }
-        });
-
-        // Add click event to the donate button
-        donateButton.addEventListener('click', function() {
-            alert(`Thank you for your donation of ${selectedAmount}!`);
-        });
+      });
+    
+      // Add click event to the "Other" button
+      otherButton.addEventListener('click', function() {
+        // Remove 'selected' class from all buttons
+        donationButtons.forEach(btn => btn.classList.remove('selected'));
+        // Add 'selected' class to "Other" button
+        otherButton.classList.add('selected');
+        // Show custom amount container
+        customAmountContainer.style.display = 'flex';
+        // Focus on the input field
+        customAmountInput.focus();
+      });
+    
+      // Add click event to set custom amount button
+      setCustomAmountButton.addEventListener('click', function() {
+        const customAmount = customAmountInput.value.trim();
+        if (customAmount && !isNaN(customAmount) && customAmount > 0) {
+          // Update the selected amount to custom amount
+          selectedAmount = `$${customAmount}`;
+          // Update the donate button text
+          donateButton.textContent = `DONATE ${selectedAmount}`;
+          // Hide custom amount container
+          customAmountContainer.style.display = 'none';
+          // Reset input field
+          customAmountInput.value = '';
+        } else {
+          alert("Please enter a valid amount.");
+        }
+      });
+    
+      // Add click event to the donate button
+      donateButton.addEventListener('click', function() {
+        // You would typically redirect to PayPal here with the `selectedAmount`
+        // For this example, we'll just show an alert
+        alert(`Thank you for your donation of ${selectedAmount}!`); 
+      });
     });
-</script>
-  <script src="assets/js/jquery-1.10.2.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/js/jquery.prettyPhoto.js"></script>
-  <script src="assets/js/jquery.knob.js"></script>
-  <script src="assets/js/scrollReveal.js"></script>
-  <script src="assets/js/custom.js"></script>
+    </script>
+
+<script src="assets/js/jquery-1.10.2.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/jquery.knob.js"></script>
+<script src="assets/js/scrollReveal.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
 </html>
